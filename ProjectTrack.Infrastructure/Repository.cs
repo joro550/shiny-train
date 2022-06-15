@@ -1,6 +1,7 @@
 ﻿using LiteDB.Async;
 using ProjectTrack.Domain;
 using ProjectTrack.Application.Common.Interfaces;
+using ProjectTrack.Domain.Common;
 
 namespace ProjectTrack.Infrastructure;
 

@@ -10,7 +10,6 @@ public class CreateProjectTests
     private readonly CreateProjectHandler _handler;
     private readonly InMemoryRepository<Project> _repo;
 
-
     public CreateProjectTests()
     {
         _repo = new InMemoryRepository<Project>();

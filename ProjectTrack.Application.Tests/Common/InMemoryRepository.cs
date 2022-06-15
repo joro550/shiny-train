@@ -1,5 +1,6 @@
 ﻿using ProjectTrack.Application.Common.Interfaces;
 using ProjectTrack.Domain;
+using ProjectTrack.Domain.Common;
 
 namespace ProjectTrack.Application.Tests.Common;
 
@@ -14,9 +15,9 @@ public class InMemoryRepository<T> : IRepository<T> where T : BaseEntity
         return Task.FromResult(entity);
     }
 
-    public Task<T> GetById(int id)
+    public Task<T?> GetById(int id)
     {
-        var firstOrDefault = _records.First(x => x.Id == id);
+        var firstOrDefault = _records.FirstOrDefault(x => x.Id == id);
         return Task.FromResult(firstOrDefault);
     }
 

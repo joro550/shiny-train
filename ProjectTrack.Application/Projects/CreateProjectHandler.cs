@@ -1,6 +1,6 @@
 ﻿using MediatR;
-using ProjectTrack.Application.Common.Interfaces;
 using ProjectTrack.Domain;
+using ProjectTrack.Application.Common.Interfaces;
 
 namespace ProjectTrack.Application.Projects;
 
@@ -17,3 +17,4 @@ public class CreateProjectHandler : INotificationHandler<CreateProject>
     public async Task Handle(CreateProject notification, CancellationToken cancellationToken) 
         => await _repo.SaveAsync(new Project { Name = notification.Name });
 }
+

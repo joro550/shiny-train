@@ -1,5 +1,5 @@
 ﻿using MediatR;
 
-namespace ProjectTrack.Domain.Events;
+namespace ProjectTrack.Domain.Common;
 
 public record BaseEvent : INotification;

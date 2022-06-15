@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using ProjectTrack.Domain.Events;
 
-namespace ProjectTrack.Domain;
+namespace ProjectTrack.Domain.Common;
 
 public abstract class BaseEntity
 {

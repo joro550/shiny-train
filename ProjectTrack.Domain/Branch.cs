@@ -2,7 +2,8 @@
 
 namespace ProjectTrack.Domain;
 
-public class Project : BaseEntity
+public class Branch : BaseEntity
 {
+    public int ProjectId { get; set; } 
     public string Name { get; set; } = string.Empty;
 }
